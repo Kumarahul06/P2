@@ -9,7 +9,11 @@
 </head>
 
 <body>
+
+
     <nav class="navbar">
+
+        <!-----------navbar left ---------------->
         <div class="navbar-left">
             <a href="index.html" class="logo"><img src="images/logo.png"></a>
 
@@ -21,6 +25,8 @@
 
 
         </div>
+
+        <!-----------navbar center ------->
         <div class="navbar-center">
             <ul>
                 <li><a href="#" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
@@ -30,19 +36,66 @@
                 <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>
             </ul>
         </div>
+
+
+        <!-----------navbar right------------------>
         <div class="navbar-right">
             <div class="online">
-
-            </div>
-            <img src="images/user-1.png" class="nav-profile-img">
+                <img src="images/user-1.png" class="nav-profile-img"  onclick="toggleMenu()">
+            </div>       
         </div>
+
+        <!-----------profile-drop-down-menu ------->
+
+
+        <div class="profile-menu-wrap"  id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>Rayan Waalton</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png" alt="">
+                    <p>Give feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png" alt="">
+                    <p>Settings and Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png" alt="">
+                    <p>Help and Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png" alt="">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
 
 
     </nav>
 
-    <!-----------navbar close----------->
+    <!-----------navbar-close----------->
+
     <div class="container">
+
         <!-----------left sidebar----------->
+
         <div class="left-sidebar">
             <div class="sidebar-profile-box">
                 <img src="images/cover-pic.png" width="100%">
@@ -81,12 +134,21 @@
                 <a href="#"><img src="images/recent.png">Learn Online</a>
                 <a href="#"><img src="images/recent.png">Group</a>
                 <a href="#"><img src="images/recent.png">Top Developent</a>
+
+
                 <h3>GROUP</h3>
+
+
+
                 <a href="#"><img src="images/group.png">Web Design</a>
                 <a href="#"><img src="images/group.png">HTML </a>
                 <a href="#"><img src="images/group.png">JAVA</a>
                 <a href="#"><img src="images/group.png">Learn</a>
+
+
                 <h3>HASHTAG</h3>
+
+
                 <a href="#"><img src="images/hashtag.png">webDevelopment </a>
                 <a href="#"><img src="images/hashtag.png">userInterface </a>
                 <a href="#"><img src="images/hashtag.png">onlineLearning</a>
@@ -98,6 +160,7 @@
 
 
         <!-----------main content----------->
+
         <div class="main-content">
 
 <div class="create-post">
@@ -128,12 +191,252 @@
             <small>2hr ago</small>
         </div>
     </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet eaque delectus quibusdam esse minima sed dolorum repellat magni officiis molestiae</p>
+    <img src="images/post-image-1.png" width="100%">
+
+
+    <div class="post-stats">
+        <div>
+            <img src="images/thumbsup.png">
+            <img src="images/love.png">
+            <img src="images/clap.png">
+            <span class="liked-users">Abhinav Mishra and 75 others</span>
+        </div>
+        <div>
+            <span>22 comments &middot; 40 Shares</span>
+        </div>
+    </div>
+
+<div class="post-activity">
+     <div>
+        <img src="images/user-1.png" class="post-activity-user-icon">
+        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+     </div>
+     <div class="post-activity-link">
+        <img src="images/like.png">
+        <span>Like</span>
+     </div>
+     <div class="post-activity-link">
+        <img src="images/comment.png">
+        <span>Comment</span>
+     </div>
+     <div class="post-activity-link">
+        <img src="images/share.png">
+        <span>Share</span>
+     </div>
+     <div class="post-activity-link">
+        <img src="images/send.png">
+        <span>Send</span>
+     </div>
+</div>
+
+</div>
+
+<div class="post">
+    <div class="post-author">
+        <img src="images/user-4.png" alt="">
+        <div>
+            <h1>Clarence George</h1>
+            <small>Founder and CEO at Gellelio / Angel Inverto</small>
+            <small>2hr ago</small>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maiores ad fuga architecto quam? Unde tenetur a ad vero nisi.</p>
+    <img src="images/post-image-2.png" width="100%">
+
+
+    <div class="post-stats">
+        <div>
+            <img src="images/thumbsup.png">
+            <img src="images/love.png">
+            <img src="images/clap.png">
+            <span class="liked-users">Abhinav Mishra and 75 others</span>
+        </div>
+        <div>
+            <span>22 comments &middot; 40 Shares</span>
+        </div>
+    </div>
+
+<div class="post-activity">
+     <div>
+        <img src="images/user-1.png" class="post-activity-user-icon">
+        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+     </div>
+     <div class="post-activity-link">
+        <img src="images/like.png">
+        <span>Like</span>
+     </div>
+     <div class="post-activity-link">
+        <img src="images/comment.png">
+        <span>Comment</span>
+     </div>
+     <div class="post-activity-link">
+        <img src="images/share.png">
+        <span>Share</span>
+     </div>
+     <div class="post-activity-link">
+        <img src="images/send.png">
+        <span>Send</span>
+     </div>
+</div>
+
+</div>
+
+<div class="post">
+    <div class="post-author">
+        <img src="images/user-4.png" alt="">
+        <div>
+            <h1>Benjamin Leo</h1>
+            <small>Founder and CEO at Gellelio / Angel Inverto</small>
+            <small>2hr ago</small>
+        </div>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet eaque delectus quibusdam esse minima sed dolorum repellat magni officiis molestiae</p>
+    <img src="images/post-image-3.png" width="100%">
+
+
+    <div class="post-stats">
+        <div>
+            <img src="images/thumbsup.png">
+            <img src="images/love.png">
+            <img src="images/clap.png">
+            <span class="liked-users">Abhinav Mishra and 75 others</span>
+        </div>
+        <div>
+            <span>22 comments &middot; 40 Shares</span>
+        </div>
+    </div>
+
+<div class="post-activity">
+     <div>
+        <img src="images/user-1.png" class="post-activity-user-icon">
+        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+     </div>
+     <div class="post-activity-link">
+        <img src="images/like.png">
+        <span>Like</span>
+     </div>
+     <div class="post-activity-link">
+        <img src="images/comment.png">
+        <span>Comment</span>
+     </div>
+     <div class="post-activity-link">
+        <img src="images/share.png">
+        <span>Share</span>
+     </div>
+     <div class="post-activity-link">
+        <img src="images/send.png">
+        <span>Send</span>
+     </div>
+</div>
+
+</div>
+
+<div class="post">
+    <div class="post-author">
+        <img src="images/user-5.png" alt="">
+        <div>
+            <h1>Benjamin Leo</h1>
+            <small>Founder and CEO at Gellelio / Angel Inverto</small>
+            <small>2hr ago</small>
+        </div>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet eaque delectus quibusdam esse minima sed dolorum repellat magni officiis molestiae</p>
+    <img src="images/post-image-2.png" width="100%">
+
+
+    <div class="post-stats">
+        <div>
+            <img src="images/thumbsup.png">
+            <img src="images/love.png">
+            <img src="images/clap.png">
+            <span class="liked-users">Abhinav Mishra and 75 others</span>
+        </div>
+        <div>
+            <span>22 comments &middot; 40 Shares</span>
+        </div>
+    </div>
+
+<div class="post-activity">
+     <div>
+        <img src="images/user-1.png" class="post-activity-user-icon">
+        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+     </div>
+     <div class="post-activity-link">
+        <img src="images/like.png">
+        <span>Like</span>
+     </div>
+     <div class="post-activity-link">
+        <img src="images/comment.png">
+        <span>Comment</span>
+     </div>
+     <div class="post-activity-link">
+        <img src="images/share.png">
+        <span>Share</span>
+     </div>
+     <div class="post-activity-link">
+        <img src="images/send.png">
+        <span>Send</span>
+     </div>
+</div>
+
+</div>
+
+<div class="post">
+    <div class="post-author">
+        <img src="images/user-5.png" alt="">
+        <div>
+            <h1>Benjamin Leo</h1>
+            <small>Founder and CEO at Gellelio / Angel Inverto</small>
+            <small>2hr ago</small>
+        </div>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet eaque delectus quibusdam esse minima sed dolorum repellat magni officiis molestiae</p>
+    <img src="images/post-image-4.png" width="100%">
+
+
+    <div class="post-stats">
+        <div>
+            <img src="images/thumbsup.png">
+            <img src="images/love.png">
+            <img src="images/clap.png">
+            <span class="liked-users">Abhinav Mishra and 75 others</span>
+        </div>
+        <div>
+            <span>22 comments &middot; 40 Shares</span>
+        </div>
+    </div>
+
+<div class="post-activity">
+     <div>
+        <img src="images/user-1.png" class="post-activity-user-icon">
+        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+     </div>
+     <div class="post-activity-link">
+        <img src="images/like.png">
+        <span>Like</span>
+     </div>
+     <div class="post-activity-link">
+        <img src="images/comment.png">
+        <span>Comment</span>
+     </div>
+     <div class="post-activity-link">
+        <img src="images/share.png">
+        <span>Share</span>
+     </div>
+     <div class="post-activity-link">
+        <img src="images/send.png">
+        <span>Send</span>
+     </div>
+</div>
+
 </div>
 
         </div>
 
 
         <!-----------right sidebar----------->
+
         <div class="right-sidebar">
             <div class="sidebar-news">
                 <img src="images/more.png" class="info-icon" alt="">
@@ -187,6 +490,16 @@
 </div>
         </div>
     </div>
+
+<script>
+
+let profileMenu = document.getElementById("profileMenu");
+function toggleMenu(){
+    profileMenu.classList.toggle("open-menu");
+}
+</script>
+
+
 </body>
 
 </html>
