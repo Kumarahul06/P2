@@ -54,7 +54,7 @@
                     <img src="images/user-1.png">
                     <div>
                         <h3>Rayan Waalton</h3>
-                        <a href="#">See your profile</a>
+                        <a href="profile.html">See your profile</a>
                     </div>
                 </div>
                 <hr>
@@ -126,7 +126,7 @@
 
 
             </div>
-            <div class="sidebar-activity">
+            <div class="sidebar-activity" id="sidebarActivity">
                 <h3>RECENT</h3>
                 <a href="#"><img src="images/recent.png">User Interface</a>
                 <a href="#"><img src="images/recent.png">Web Developent</a>
@@ -137,9 +137,6 @@
 
 
                 <h3>GROUP</h3>
-
-
-
                 <a href="#"><img src="images/group.png">Web Design</a>
                 <a href="#"><img src="images/group.png">HTML </a>
                 <a href="#"><img src="images/group.png">JAVA</a>
@@ -147,8 +144,6 @@
 
 
                 <h3>HASHTAG</h3>
-
-
                 <a href="#"><img src="images/hashtag.png">webDevelopment </a>
                 <a href="#"><img src="images/hashtag.png">userInterface </a>
                 <a href="#"><img src="images/hashtag.png">onlineLearning</a>
@@ -156,6 +151,8 @@
                     <a href="#">Discover more</a>
                 </div>
             </div>
+
+            <p id="showMoreink" onclick="toggleActivity() ">Show More <b>+</b></p>
         </div>
 
 
@@ -499,6 +496,23 @@ function toggleMenu(){
 }
 </script>
 
+<script>
+let sideActivity = document.getElementById("sidebarActivity");
+let moreLink = document.getElementById("showMoreLink");
+
+function toggleActivity(){
+    sideActivity.classList.toggle("open-activity");
+
+    if(sideActivity.classList.contains("open-activity")){
+        moreLink.innerHTML="Show less <b>-</b>";
+    }
+    else{
+        moreLink.innerHTML="Show more <b>+</b>";
+    }
+}
+
+
+</script>
 
 </body>
 
